@@ -172,16 +172,8 @@ Mensaje: ${formData.message}`;
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-4">
-              <img 
-                src="/src/assets/bpcaa-logo-2.png" 
-                alt="BPCAA Logo" 
-                className="h-12 w-auto"
-              />
-              <img 
-                src="/src/assets/buenas-practicas-text.png" 
-                alt="Buenas Prácticas de CAA" 
-                className="h-16 w-auto"
-              />
+              <img src="/src/assets/bpcaa-logo-2.png" alt="BPCAA Logo" className="h-12 w-auto" />
+              <img src="/src/assets/buenas-practicas-text.png" alt="Buenas Prácticas de CAA" className="h-16 w-auto" />
             </div>
 
             {/* Desktop Navigation */}
@@ -657,7 +649,7 @@ Mensaje: ${formData.message}`;
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div className="space-y-4">
-                <img src={bpcaaLogo} alt="Buenas Prácticas de CAA" className="h-12 w-auto brightness-0 invert" />
+                
                 <p className="text-background/70">
                   Comunicación para todos, inclusión real
                 </p>
