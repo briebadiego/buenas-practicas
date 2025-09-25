@@ -307,6 +307,10 @@ Mensaje: ${formData.message}`;
                   icon: Target,
                   title: "Trabajo colaborativo",
                   description: "e interdisciplinario"
+                }, {
+                  icon: MessageSquare,
+                  title: "La comunicación como un derecho",
+                  description: "para todos"
                 }].map((value, index) => <div key={index} className="text-center space-y-3">
                       <value.icon className="w-12 h-12 text-primary mx-auto" />
                       <h3 className="font-semibold text-foreground">{value.title}</h3>
@@ -418,6 +422,10 @@ Mensaje: ${formData.message}`;
               icon: MessageSquare,
               title: "Multimodalidad",
               description: "Combinación de gestos, símbolos, tecnología y habla"
+            }, {
+              icon: Award,
+              title: "Prácticas basadas en la evidencia",
+              description: "Intervenciones fundamentadas en investigación científica actual"
             }].map((principle, index) => <Card key={index} className="text-center p-6 hover:shadow-lg caa-transition caa-shadow-card">
                   <principle.icon className="w-16 h-16 text-primary mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-3 text-foreground">{principle.title}</h3>
@@ -495,71 +503,98 @@ Mensaje: ${formData.message}`;
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <Card className="p-6 caa-shadow-card">
-                <CardHeader>
-                  <CardTitle>Envíanos tu consulta</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <Label htmlFor="name">Nombre completo *</Label>
-                      <Input id="name" type="text" value={formData.name} onChange={e => setFormData({
-                      ...formData,
-                      name: e.target.value
-                    })} required className="mt-1" />
+              {/* Contact Form and Social Media */}
+              <div className="space-y-8">
+                <Card className="p-6 caa-shadow-card">
+                  <CardHeader>
+                    <CardTitle>Envíanos tu consulta</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      <div>
+                        <Label htmlFor="name">Nombre completo *</Label>
+                        <Input id="name" type="text" value={formData.name} onChange={e => setFormData({
+                        ...formData,
+                        name: e.target.value
+                      })} required className="mt-1" />
+                      </div>
+
+                      <div>
+                        <Label htmlFor="email">Email *</Label>
+                        <Input id="email" type="email" value={formData.email} onChange={e => setFormData({
+                        ...formData,
+                        email: e.target.value
+                      })} required className="mt-1" />
+                      </div>
+
+                      <div>
+                        <Label htmlFor="phone">Teléfono</Label>
+                        <Input id="phone" type="tel" value={formData.phone} onChange={e => setFormData({
+                        ...formData,
+                        phone: e.target.value
+                      })} className="mt-1" />
+                      </div>
+
+                      <div>
+                        <Label htmlFor="consultationType">Tipo de consulta</Label>
+                        <Select onValueChange={value => setFormData({
+                        ...formData,
+                        consultationType: value
+                      })}>
+                          <SelectTrigger className="mt-1">
+                            <SelectValue placeholder="Selecciona una opción" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="evaluacion">Evaluación</SelectItem>
+                            <SelectItem value="capacitacion">Capacitación</SelectItem>
+                            <SelectItem value="asesoria">Asesoría</SelectItem>
+                            <SelectItem value="informacion">Información general</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+
+                      <div>
+                        <Label htmlFor="message">Mensaje *</Label>
+                        <Textarea id="message" value={formData.message} onChange={e => setFormData({
+                        ...formData,
+                        message: e.target.value
+                      })} required rows={4} className="mt-1" />
+                      </div>
+
+                      <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                        Enviar consulta
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
+
+                <Card className="p-6 caa-shadow-card">
+                  <CardHeader>
+                    <CardTitle>Síguenos en Redes Sociales</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex space-x-4">
+                      <Button variant="outline" size="icon" asChild>
+                        <a href="https://instagram.com/buenaspracticasdecaa" target="_blank" rel="noopener noreferrer">
+                          <Instagram className="w-4 h-4" />
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="icon" asChild>
+                        <a href="https://linkedin.com/in/claudia-marimon" target="_blank" rel="noopener noreferrer">
+                          <Linkedin className="w-4 h-4" />
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="icon" asChild>
+                        <a href="https://youtube.com/@buenaspracticascaa" target="_blank" rel="noopener noreferrer">
+                          <Youtube className="w-4 h-4" />
+                        </a>
+                      </Button>
                     </div>
+                  </CardContent>
+                </Card>
+              </div>
 
-                    <div>
-                      <Label htmlFor="email">Email *</Label>
-                      <Input id="email" type="email" value={formData.email} onChange={e => setFormData({
-                      ...formData,
-                      email: e.target.value
-                    })} required className="mt-1" />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="phone">Teléfono</Label>
-                      <Input id="phone" type="tel" value={formData.phone} onChange={e => setFormData({
-                      ...formData,
-                      phone: e.target.value
-                    })} className="mt-1" />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="consultationType">Tipo de consulta</Label>
-                      <Select onValueChange={value => setFormData({
-                      ...formData,
-                      consultationType: value
-                    })}>
-                        <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="Selecciona una opción" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="evaluacion">Evaluación</SelectItem>
-                          <SelectItem value="capacitacion">Capacitación</SelectItem>
-                          <SelectItem value="asesoria">Asesoría</SelectItem>
-                          <SelectItem value="informacion">Información general</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="message">Mensaje *</Label>
-                      <Textarea id="message" value={formData.message} onChange={e => setFormData({
-                      ...formData,
-                      message: e.target.value
-                    })} required rows={4} className="mt-1" />
-                    </div>
-
-                    <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                      Enviar consulta
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-
-              {/* Contact Information */}
+              {/* Contact Information and Office Image */}
               <div className="space-y-8">
                 <Card className="p-6 caa-shadow-card">
                   <CardHeader>
@@ -600,32 +635,7 @@ Mensaje: ${formData.message}`;
                   </CardContent>
                 </Card>
 
-                <Card className="p-6 caa-shadow-card">
-                  <CardHeader>
-                    <CardTitle>Síguenos en Redes Sociales</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex space-x-4">
-                      <Button variant="outline" size="icon" asChild>
-                        <a href="https://instagram.com/buenaspracticasdecaa" target="_blank" rel="noopener noreferrer">
-                          <Instagram className="w-4 h-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="icon" asChild>
-                        <a href="https://linkedin.com/in/claudia-marimon" target="_blank" rel="noopener noreferrer">
-                          <Linkedin className="w-4 h-4" />
-                        </a>
-                      </Button>
-                      <Button variant="outline" size="icon" asChild>
-                        <a href="https://youtube.com/@buenaspracticascaa" target="_blank" rel="noopener noreferrer">
-                          <Youtube className="w-4 h-4" />
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <div className="mt-8">
+                <div>
                   <img src={therapyOffice} alt="Oficina de terapia CAA" className="rounded-2xl caa-shadow-card w-full" />
                 </div>
               </div>
