@@ -238,7 +238,7 @@ Mensaje: ${formData.message}`;
                 </a>
               </Button>
               
-              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8">
+              <Button size="lg" asChild className="bg-white/20 text-white border-2 border-white hover:bg-white hover:text-primary font-semibold px-8 backdrop-blur-sm">
                 <a href="#contacto">Agenda una consulta</a>
               </Button>
             </div>
