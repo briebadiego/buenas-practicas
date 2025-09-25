@@ -218,9 +218,7 @@ Mensaje: ${formData.message}`;
         
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Transformando Vidas a través de la Comunicación
-            </h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Transformando vidas a través de la Comunicación</h1>
             
             <p className="text-xl md:text-2xl mb-4 opacity-95 animate-slide-in-left">
               Centro especializado en Comunicación Aumentativa y Alternativa dirigido por Claudia Marimón, educadora diferencial y experta en CAA
