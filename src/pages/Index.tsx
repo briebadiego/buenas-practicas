@@ -679,7 +679,7 @@ Mensaje: ${formData.message}`;
               <div>
                 <h3 className="font-semibold mb-4">Contacto</h3>
                 <div className="space-y-2 text-background/70">
-                  <p>Vitacura, Santiago</p>
+                  <p>Camino San Francisco de Asis 150, Oficina 632, Vitacura, Santiago</p>
                   <p>+56 9 9820 6450</p>
                   <p>buenaspracticasdecaa@gmail.com</p>
                 </div>
