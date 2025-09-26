@@ -12,8 +12,8 @@ import { toast } from "@/hooks/use-toast";
 // Import assets
 import bpcaaLogo from "@/assets/bpcaa-logo.jpg";
 import heroImage from "@/assets/hero-caa.jpg";
-import therapyOffice from "@/assets/therapy-office.jpg";
-import claudiaMarimon from "@/assets/claudia-marimon.jpg";
+import therapyOffice from "@/assets/therapy-office.png";
+import claudiaMarimon from "@/assets/claudia-marimon.jpeg";
 import groupTherapy from "@/assets/group-therapy.jpg";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -260,6 +260,7 @@ Mensaje: ${formData.message}`;
               </h2>
             </div>
 
+            {/* Claudia Marimón */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -267,15 +268,35 @@ Mensaje: ${formData.message}`;
                 </p>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed">Es docente de la Universidad del Desarrollo (UDD) donde dirige un diplomado en CAA, es Presidenta de ISAAC Español (Asociación Internacional de CAA) y forma parte del equipo profesional del Centro de Rehabilitación Amancay.</p>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed font-semibold">
-                  Nuestra misión es promover la comunicación funcional e inclusión social de personas con necesidades comunicativas complejas mediante capacitación en buenas prácticas de CAA, apoyadas en evidencia científica.
-                </p>
               </div>
               
               <div className="relative">
-                <img src={claudiaMarimon} alt="Claudia Marimón" className="rounded-2xl caa-shadow-card w-full" />
+                <img src={claudiaMarimon} alt="Claudia Marimón" className="rounded-2xl caa-shadow-card w-2/3 mx-auto" />
               </div>
+            </div>
+
+            {/* Soledad Cuesta */}
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="relative order-2 md:order-1">
+                <img src="/src/assets/soledad-cuesta.jpeg" alt="Soledad Cuesta" className="rounded-2xl caa-shadow-card w-2/3 mx-auto" />
+              </div>
+              
+              <div className="space-y-6 order-1 md:order-2">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Soledad Cuesta es co-fundadora de Buenas Prácticas de CAA. Es fonoaudióloga de la Universidad de Chile y especialista reconocida en Comunicación Aumentativa y Alternativa (CAA).
+                </p>
+                
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Actualmente es docente y coordinadora del Diplomado en CAA en la Universidad del Desarrollo (UDD). Forma parte activa de la Asociación Internacional de CAA (ISAAC) y del equipo profesional del Centro de Rehabilitación Neurológica Amancay.
+                </p>
+              </div>
+            </div>
+
+            {/* Misión */}
+            <div className="text-center mb-16">
+              <p className="text-lg text-muted-foreground leading-relaxed font-semibold max-w-4xl mx-auto">
+                Nuestra misión es promover la comunicación funcional e inclusión social de personas con necesidades comunicativas complejas mediante capacitación en buenas prácticas de CAA, apoyadas en evidencia científica.
+              </p>
             </div>
 
             <Card className="caa-shadow-card">
