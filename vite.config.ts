@@ -9,10 +9,17 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Asegura rutas correctas en GitHub Pages y dominio personalizado
+  base: '/',
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  // Publica el build en la carpeta 'docs' para usarla con GitHub Pages (Deploy from branch)
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
   },
 }));

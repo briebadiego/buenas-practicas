@@ -10,11 +10,13 @@ import { Menu, X, Phone, Mail, MapPin, Clock, Instagram, Linkedin, Youtube, User
 import { toast } from "@/hooks/use-toast";
 
 // Import assets
-import bpcaaLogo from "@/assets/bpcaa-logo.jpg";
+import bpcaaLogo2 from "@/assets/bpcaa-logo-2.png";
+import buenasPracticasText from "@/assets/buenas-practicas-text.png";
 import heroImage from "@/assets/hero-caa.jpg";
 import therapyOffice from "@/assets/therapy-office.png";
 import claudiaMarimon from "@/assets/claudia-marimon.jpeg";
 import groupTherapy from "@/assets/group-therapy.jpg";
+import soledadCuesta from "@/assets/soledad-cuesta.jpeg";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -172,8 +174,8 @@ Mensaje: ${formData.message}`;
         <div className="container mx-auto px-4">
           <div className="flex h-20 items-center justify-between">
             <div className="flex items-center gap-0">
-              <img src="/src/assets/bpcaa-logo-2.png" alt="BPCAA Logo" className="h-16 w-auto" />
-              <img src="/src/assets/buenas-practicas-text.png" alt="Buenas Prácticas de CAA" className="h-20 w-auto" />
+              <img src={bpcaaLogo2} alt="BPCAA Logo" className="h-16 w-auto" />
+              <img src={buenasPracticasText} alt="Buenas Prácticas de CAA" className="h-20 w-auto" />
             </div>
 
             {/* Desktop Navigation */}
@@ -278,7 +280,7 @@ Mensaje: ${formData.message}`;
             {/* Soledad Cuesta */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative order-2 md:order-1">
-                <img src="/src/assets/soledad-cuesta.jpeg" alt="Soledad Cuesta" className="rounded-2xl caa-shadow-card w-2/3 mx-auto" />
+                <img src={soledadCuesta} alt="Soledad Cuesta" className="rounded-2xl caa-shadow-card w-2/3 mx-auto" />
               </div>
               
               <div className="space-y-6 order-1 md:order-2">
