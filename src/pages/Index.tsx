@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Menu, X, Phone, Mail, MapPin, Clock, Instagram, Linkedin, Youtube, Users, BookOpen, Heart, Target, Lightbulb, Award, MessageSquare, CheckCircle, Star, ArrowRight, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Clock, Instagram, Linkedin, Youtube, Users, BookOpen, Heart, Target, Lightbulb, Award, MessageSquare, CheckCircle, Star, ArrowRight, ChevronDown, Facebook } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 // Import assets
@@ -136,10 +136,10 @@ Mensaje: ${formData.message}`;
     answer: "Personas con parálisis cerebral, autismo, síndrome de Down, afasia, lesiones cerebrales traumáticas, ELA, y cualquier condición que afecte la comunicación verbal."
   }, {
     question: "¿Cuánto tiempo dura el proceso de evaluación?",
-    answer: "La evaluación inicial puede tomar entre 2-4 sesiones, dependiendo de las necesidades individuales. Luego se desarrolla un plan de intervención personalizado."
+    answer: "La evaluación inicial suele realizarse en una sesión, dónde se realiza un diagnóstico e identifican las necesidades individuales. Luego se desarrolla un plan de intervención personalizado."
   }, {
-    question: "¿Trabajan con seguros de salud?",
-    answer: "Sí, trabajamos con la mayoría de seguros de salud. Te ayudamos con la documentación necesaria para los reembolsos."
+    question: "¿La Comunicación Aumentativa y Alternativa es apta para todas las edades?",
+    answer: "La CAA puede implementarse desde la infancia hasta la adultez, adaptándose a las necesidades de cada etapa y persona."
   }, {
     question: "¿Ofrecen atención online?",
     answer: "Sí, ofrecemos servicios de telerehabilitación y consultas online para familias que no pueden asistir presencialmente."
@@ -148,9 +148,9 @@ Mensaje: ${formData.message}`;
     answer: "Los cursos están dirigidos a profesionales de la salud, educación y familias. Los requisitos específicos varían según el programa."
   }];
   const testimonials = [{
-    name: "María González",
+    name: "Layla Pérez",
     role: "Madre de usuario CAA",
-    content: "El trabajo de Claudia transformó completamente la comunicación de mi hijo. Ahora puede expresar sus necesidades y emociones de manera efectiva.",
+    content: "Estuvimos aprendiendo sobre Comunicación Aumentativa y Alternativa (CAA) con una profesional increíble, de esas personas que te inspiran desde el primer momento. Su conocimiento, su forma de transmitir y su sensibilidad nos ayudaron a entender cómo una herramienta como esta puede tener un impacto profundo —no solo en la vida de mi hijo, sino también en la de todos los que lo rodeamos.",
     rating: 5
   }, {
     name: "Dr. Carlos Méndez",
@@ -609,8 +609,8 @@ Mensaje: ${formData.message}`;
                         </a>
                       </Button>
                       <Button variant="outline" size="icon" asChild>
-                        <a href="https://youtube.com/@buenaspracticascaa" target="_blank" rel="noopener noreferrer">
-                          <Youtube className="w-4 h-4" />
+                        <a href="https://www.facebook.com/buenaspracticasdecaa" target="_blank" rel="noopener noreferrer">
+                          <Facebook className="w-4 h-4" />
                         </a>
                       </Button>
                     </div>
