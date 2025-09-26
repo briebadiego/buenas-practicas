@@ -130,7 +130,7 @@ Mensaje: ${formData.message}`;
   }];
   const faqData = [{
     question: "¿Qué es la Comunicación Aumentativa y Alternativa?",
-    answer: "La CAA incluye todas las formas de comunicación (aparte del habla) que se usan para expresar pensamientos, necesidades, deseos e ideas. Incluye gestos, lenguaje de señas, símbolos gráficos, dispositivos electrónicos y muchas otras formas de comunicación."
+    answer: "La CAA incluye todas las formas de comunicación (aparte del habla) que se usan para expresar pensamientos, necesidades, deseos e ideas. Incluye gestos, símbolos gráficos, dispositivos electrónicos y muchas otras formas de comunicación."
   }, {
     question: "¿Quiénes pueden beneficiarse de la CAA?",
     answer: "Personas con parálisis cerebral, autismo, síndrome de Down, afasia, lesiones cerebrales traumáticas, ELA, y cualquier condición que afecte la comunicación verbal."
