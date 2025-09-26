@@ -170,10 +170,10 @@ Mensaje: ${formData.message}`;
       {/* Header */}
       <header className="sticky top-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="container mx-auto px-4">
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center gap-4">
-              <img src="/src/assets/bpcaa-logo-2.png" alt="BPCAA Logo" className="h-12 w-auto" />
-              <img src="/src/assets/buenas-practicas-text.png" alt="Buenas Prácticas de CAA" className="h-16 w-auto" />
+          <div className="flex h-20 items-center justify-between">
+            <div className="flex items-center gap-0">
+              <img src="/src/assets/bpcaa-logo-2.png" alt="BPCAA Logo" className="h-16 w-auto" />
+              <img src="/src/assets/buenas-practicas-text.png" alt="Buenas Prácticas de CAA" className="h-20 w-auto" />
             </div>
 
             {/* Desktop Navigation */}
